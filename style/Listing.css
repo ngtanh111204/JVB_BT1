@@ -1,0 +1,372 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Desktop Base Styles (≥ 992px) */
+
+/* Menu Toggle */
+.menu-toggle {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 10px;
+    display: none;
+}
+
+.menu-toggle span {
+    margin: 5px 0;
+    height: 3px;
+    width: 25px;
+    background: #000;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* Header */
+.site-header {
+    border-bottom: 2px solid rgb(236, 230, 230);
+    height: 133px;
+    display: flex;
+    align-items: center;
+}
+
+.site-header .wrapper {
+    margin: 0 auto;
+    width: 1316px;
+}
+
+.header-content {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.logo-container img {
+    height: 37.53px;
+    width: 395px;
+}
+
+.main-nav ul {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'PT Serif', serif;
+    color: #000;
+}
+
+.main-nav ul li:hover {
+    text-decoration: underline;
+}
+
+/* Intro Section */
+.intro-block {
+    padding: 76px 0 34px;
+}
+
+.intro-block .wrapper {
+    margin: 0 auto;
+    width: 854px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-img img {
+    width: 100%;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 44px;
+}
+
+.intro-heading {
+    text-align: center;
+    line-height: 100%;
+    font-weight: bold;
+    font-size: 54px;
+    font-family: 'PT Serif', serif;
+    color: #000;
+    margin-bottom: 32px;
+    width: 858px;
+}
+
+.intro-subheading {
+    text-align: center;
+    line-height: 1.7;
+    /* 170% */
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'SF Mono', sans-serif;
+    color: #000;
+    margin: 0 auto;
+    width: 592px;
+}
+
+/* Articles Section */
+
+.articles-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articles-block .wrapper {
+    border-top: 3px solid #000;
+    width: 640px;
+}
+
+.section-heading {
+    line-height: 1;
+    font-weight: bold;
+    font-size: 44px;
+    font-family: 'PT Serif', serif;
+    color: #000;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    max-width: 1000px;
+}
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img {
+    margin-bottom: 20px;
+}
+
+.card-img img {
+    object-fit: cover;
+    width: 304px;
+    height: 176px;
+}
+
+.card-text {
+    text-align: center;
+    width: 262px;
+    min-height: 120px;
+}
+
+.card-text a {
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 22px;
+    font-family: 'SF Pro Display', sans-serif;
+    color: #000;
+}
+
+/* Footer */
+.site-footer {
+    margin-top: 100px;
+    padding-top: 20px;
+    background: #000;
+}
+
+.footer-top img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.footer-middle .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 488px;
+}
+
+.footer-logo {
+    margin-bottom: 26px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    width: 287px;
+    height: 71px;
+}
+
+.footer-bottom {
+    margin-top: 32px;
+}
+
+.footer-links ul {
+    gap: 28px;
+    justify-content: center;
+    display: flex;
+}
+
+.footer-links ul a {
+    font-size: 16px;
+    font-family: 'SF Pro Display', sans-serif;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    line-height: 1.4;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: 'SF Pro Display', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 64px;
+}
+
+
+/* Mobile Styles (< 768px) */
+@media (max-width: 768px) {
+
+    /* Header */
+    .site-header {
+        padding: 24px 20px 21px;
+    }
+
+    .site-header .wrapper {
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .header-content {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .logo-container img {
+        height: 22px;
+        width: 217px;
+    }
+
+    .menu-toggle {
+        display: block;
+
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .main-nav.is-active {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        background: #fff;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        position: absolute;
+        flex-direction: column;
+        display: flex;
+    }
+
+    /* Intro Section */
+    .intro-block {
+        padding: 52px 0;
+    }
+
+    .intro-block .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .intro-img img {
+        height: auto;
+        width: 100%;
+    }
+
+    .intro-text {
+        display: flex;
+        flex-direction: column;
+        margin: 32px 20px 0;
+        align-items: center;
+    }
+
+    .intro-heading {
+        text-align: center;
+        margin-bottom: 24px;
+        font-size: 36px;
+        width: 335px;
+        height: 172px;
+    }
+
+    .intro-subheading {
+        margin: 0 20px;
+        font-size: 16px;
+        width: auto;
+    }
+
+    /* Articles Section */
+    .articles-block .wrapper {
+        width: 100%;
+    }
+
+    .articles-grid {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 0px;
+    }
+
+    .section-heading {
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+
+    .article-card img {
+        width: 335px;
+        height: 194px;
+    }
+
+    /* Footer */
+    .site-footer {
+        overflow: hidden;
+        padding: 22px 0 32px;
+    }
+
+    .footer-top img {
+        width: 250%;
+    }
+
+    .footer-middle .wrapper {
+        width: 330px;
+    }
+
+    .footer-logo {
+        margin-bottom: 26px;
+        margin-top: 100px;
+    }
+
+    .footer-text {
+        width: 287px;
+        height: 71px;
+    }
+}
