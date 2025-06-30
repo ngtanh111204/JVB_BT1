@@ -78,7 +78,6 @@ li {
 
 .main-nav ul li a {
     color: #000000;
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -120,7 +119,7 @@ li {
     line-height: 100%;
     font-weight: bold;
     font-size: 54px;
-    font-family: 'PT Serif', serif;
+    font-family: 'New York Extra Large', serif;
     color: #000;
     margin-bottom: 32px;
     width: 858px;
@@ -159,7 +158,8 @@ li {
     color: #000;
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    font-weight: 700;
 }
 
 .articles-grid {
@@ -169,10 +169,15 @@ li {
     max-width: 1000px;
 }
 
+.articles-grid.two {
+    display: none;
+}
+
 .article-card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
 }
 
 .card-img {
@@ -188,7 +193,6 @@ li {
 .card-text {
     text-align: center;
     width: 262px;
-    min-height: 120px;
 }
 
 .card-text a {
@@ -232,7 +236,6 @@ li {
 
 .footer-text {
     color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     text-align: center;
@@ -284,18 +287,15 @@ li {
     /* Header Styles */
     .site-header {
         padding: 30px 0;
-        /* Giảm padding để gọn hơn */
     }
 
     .site-header .wrapper {
         max-width: 100%;
-        /* Đồng bộ với content-block wrapper */
         padding: 0 40px;
     }
 
     .logo-container img {
         width: 320px;
-        /* Giảm kích thước logo để phù hợp */
         height: auto;
     }
 
@@ -360,17 +360,25 @@ li {
     .article-card {
         width: 100%;
         max-width: 304px;
-        margin: 0 auto;
+        margin: 0 40px auto;
+        margin-bottom: 40px;
     }
 
-    .article-card:nth-child(n+7) {
+    .articles-grid.one {
         display: none;
+    }
+
+    .articles-grid.two {
+        display: block;
+    }
+
+    .card-text {
+        width: 300px;
     }
 
     /* Footer */
     .footer-top img {
         width: 100%;
-        /* Khắc phục kích thước hình ảnh footer */
         height: 100%;
     }
 
@@ -388,6 +396,8 @@ li {
 
     .footer-text {
         font-size: 13px;
+        width: 287px;
+        font-weight: 400;
     }
 
     .footer-copyright {
@@ -429,7 +439,7 @@ li {
     }
 
     .intro-subheading {
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
     }
 
@@ -453,8 +463,8 @@ li {
 /* Mobile Specific (<= 440px) */
 @media (max-width: 440px) {
     .logo-container img {
-        width: 100%;
-        max-width: 217px;
+        width: 217px;
+        height: 20px;
     }
 
     .menu-toggle span {
@@ -465,19 +475,33 @@ li {
     .footer-text {
         width: 287px;
     }
+
+    .intro-img img {
+        width: 100%;
+        max-width: 375px;
+        height: 235px;
+        max-height: 236px;
+    }
+
+    .section-heading {
+        font-size: 32px;
+    }
 }
 
 /* Mobile Specific (<= 375px) */
 @media (max-width: 375px) {
-    .logo-container img {
-        width: 217px;
-        height: 20px;
-        /* max-width: 100%; */
+    * {
+        width: auto;
     }
 
-    .card-img img {
-        width: 335px;
-        height: 194px;
+    /* .logo-container img {
+        width: auto;
+        max-width: 200px;
+    } */
+
+    /* .card-img img {
+        width: auto;
+        height: auto;
     }
 
     .intro-img img {
@@ -485,18 +509,5 @@ li {
         max-width: 375px;
         height: 100%;
         max-height: 236px;
-    }
-}
-
-/* Mobile Specific (<= 374px) */
-@media (max-width: 370px) {
-    .logo-container img {
-        width: auto;
-        max-width: 215px;
-    }
-
-    .card-img img {
-        width: 100%;
-        height: auto;
-    }
+    } */
 }
