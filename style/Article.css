@@ -1,3 +1,5 @@
+/* Article */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -75,7 +77,6 @@ li {
 
 .main-nav ul li a {
     color: #000000;
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -178,7 +179,7 @@ li {
 }
 
 .social-btn {
-    width: 90px;
+    width: 70px;
     padding: 13px 0;
     border: 1px solid #EAEAEA;
     border-radius: 4px 0 0 4px;
@@ -186,10 +187,11 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 44px;
 }
 
 .social-btn a {
-    font-size: 16px;
+    font-size: 20px;
     color: #000000;
 }
 
@@ -197,6 +199,14 @@ li {
     border-radius: 0 4px 4px 0;
     border-left: none;
     display: none;
+}
+
+.social-btn.below {
+    height: 64px;
+}
+
+.social-btn.below a {
+    font-size: 16px;
 }
 
 .article-text {
@@ -232,10 +242,10 @@ li {
 }
 
 .img-caption {
-    max-width: 100%;
+    max-width: 481px;
     width: 100%;
     padding: 0 20px;
-    margin: 12px auto 40px;
+    margin: 0px auto 40px;
     font-family: 'SF Pro Display', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -344,7 +354,7 @@ li {
 
 .section-heading {
     margin-bottom: 27px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'New York Extra Large', sans-serif;
     font-size: 44px;
     font-weight: 700;
     text-align: center;
@@ -399,7 +409,7 @@ li {
 
 .form-heading {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'New York Extra Large', sans-serif;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 18px;
@@ -416,7 +426,7 @@ li {
 }
 
 .newsletter-form form {
-    width: 70%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
     display: inline-flex;
@@ -702,12 +712,12 @@ li {
     }
 
     .intro-heading {
-        font-size: 28px;
+        font-size: 36px;
         text-align: center;
     }
 
     .intro-subheading {
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
     }
 
@@ -732,13 +742,33 @@ li {
     .logo-container img {
         width: 100%;
         max-width: 217px;
+    }
 
+    .social-btn {
+        height: 54px;
+    }
 
+    .social-btn a {
+        font-size: 20px;
+    }
+
+    .social-btn.below {
+        height: 54px;
+    }
+
+    .social-btn.below a {
+        font-size: 20px;
     }
 
     .menu-toggle span {
         width: 20px;
         opacity: 1;
+    }
+
+    .section-heading {
+        font-family: 'New York Extra Large';
+        font-size: 32px;
+        font-weight: 700;
     }
 
     .article-card:nth-child(n+4) {
@@ -752,6 +782,7 @@ li {
 
     .form-text {
         width: 320px;
+        font-size: 16px;
     }
 
     .newsletter-form form {
@@ -782,6 +813,11 @@ li {
         width: 108px;
         font-size: 16px;
         padding: 0;
+    }
+
+    .card-img img {
+        width: 335px;
+        height: 194px;
     }
 }
 
